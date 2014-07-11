@@ -1,0 +1,20 @@
+`( [ ] ),
+
+sshfs cassidyk@192.168.1.64:/Users/cassidyk/wheel /mnt/sshfs/
+`,password
+mkdir ~/git
+cp -R /mnt/sshfs/git/archlive/ ~/git/archlive
+
+
+`( transfer ( stream ,source ,stream ) )
+
+  `( transfer ( ,env ,source ) )
+  '( env (
+      `( ,sshfs ,password ,source ,stream )
+      `( ,tree ,folder ,delta )
+      '( tree ( git repo ) )
+      '( folder ( git branch root )
+      '( delta ( env ) ; env returns itself in '( ) form ) )
+      '( source `,( env ( names ) ;clojures ) `,( env ( name ) ;return a version of self ) ) ) )
+
+      ßß

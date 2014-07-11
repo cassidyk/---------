@@ -1,0 +1,16 @@
+; arc shell
+(  )
+
+
+
+
+
+
+
+'( mac pass file to shell )
+'( mac set file env )
+'( mac pass shell )
+'( mac shell env )
+'( mac to stream1 stream2 )
+
+`( mac ( stream ( pass ( shell ( ,env )   ) ) )
